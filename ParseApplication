@@ -1,0 +1,24 @@
+package com.codepath.rkpandey.instagramclonewithparse;
+
+import android.app.Application;
+
+
+import android.app.Application;
+
+import com.parse.Parse;
+
+class ParseApplication extends Application {
+
+    @Override
+    public void onCreate() {
+        super.onCreate ();
+
+        Parse.initialize (new Parse.Configuration.Builder (this)
+                .applicationId ("V6FZUQLFZN5iGQhebGLtfunEVYgest9VI0jqO6tl")
+                .clientKey ("q6FAJVwRWRswVjKLveTWf776vR2a00Jq0teHjNHh")
+                .server ("https://parseapi.back4app.com")
+                .build ()
+        );
+    }
+
+}
